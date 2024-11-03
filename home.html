@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form id="weatherForm">
+        <input type="text" id="city" placeholder="Enter city name" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    <div id="weatherResult"></div>
+
+    <script>
+        document.getElementById("weatherForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const city = document.getElementById("city").value; // Get the city input
+            fetch(`http://localhost:8000/?city=${encodeURIComponent(city)}`) // Make the fetch call
+                .then(response => response.text()) // Convert the response to text
+                .then(data => {
+                    document.getElementById("weatherResult").innerHTML = data; // Display the result
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+        });
+    </script>
+</body>
+</html>
