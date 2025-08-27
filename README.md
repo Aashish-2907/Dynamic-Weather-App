@@ -18,7 +18,7 @@ Installation
 Clone this repository:
 bash
 Copy code
-git clone https://github.com/yourusername/dynamic-weather-app.git
+git clone https://github.com/Aashish-2907/Dynamic-Weather-App
 
 Navigate to the project directory:
 cd dynamic-weather-app
