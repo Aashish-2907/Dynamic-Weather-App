@@ -9,7 +9,7 @@ Frontend: HTML, CSS, JavaScript
 Backend: Node.js
 API: OpenWeather API
 Getting Started 🎉
-Follow these steps to set up and run the project locally:
+Follow these steps to set up and run the project locally: 
 
 Prerequisites
 Node.js installed on your system
