@@ -1,4 +1,4 @@
-This is a simple dynamic weather app that provides real-time weather information for a specific location. The app is built using HTML, CSS, JavaScript, and Node.js, fetching weather data using the OpenWeather API.
+ ## This is a simple dynamic weather app that provides real-time weather information for a specific location. The app is built using HTML, CSS, JavaScript, and Node.js, fetching weather data using the OpenWeather API.
 
 Features 🚀
 Displays current weather conditions for a specific location.
@@ -19,30 +19,24 @@ Clone this repository:
 bash
 Copy code
 git clone https://github.com/yourusername/dynamic-weather-app.git
+
 Navigate to the project directory:
-bash
-Copy code
 cd dynamic-weather-app
 Install the required dependencies:
-bash
-Copy code
 npm install
+
 Create a .env file in the root directory and add your OpenWeather API key:
-env
-Copy code
 API_KEY=your_openweather_api_key
+
 Running the App
 Start the server:
-bash
-Copy code
 node index.js
 Open your browser and navigate to:
-arduino
-Copy code
+
 http://localhost:3000
 Folder Structure 📂
 bash
-Copy code
+
 dynamic-weather-app/
 ├── home.html           # Main HTML file for the app
 ├── index.js            # Backend logic
